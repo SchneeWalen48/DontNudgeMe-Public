@@ -1,7 +1,8 @@
 <div align="center">
 
-# 🎮 Don't Nudge Me 
-### 실시간 멀티 플레이 캐주얼 배틀 로얄 게임
+# 🎮 Don't Nudge Me
+### 실시간 멀티플레이 캐주얼 배틀 로얄 게임
+
 <a href="">
   <img width="100" height="100" alt="Youtube_logo"
     src="https://github.com/user-attachments/assets/2aa6f449-7ffa-4dd2-9086-232f5499456f" />
@@ -12,27 +13,31 @@
 <table>
   <tr>
     <td align="center" width="33%">
-      <img alt="_img" src="" />
+      <img alt="movement" src="" />
       <br/>
-      <b>설명</b>
+      <b>플레이어 이동</b>
     </td>
     <td align="center" width="33%">
-      <img alt="_img" src="" />
+      <img alt="nudge" src="" />
       <br/>
-      <b>설명</b>
+      <b>넛지 상호작용</b>
     </td>
     <td align="center" width="33%">
-      <img alt="_img" src="" />
+      <img alt="slide" src="" />
       <br/>
-      <b>설명</b>
+      <b>슬라이딩 기믹</b>
     </td>
   </tr>
 </table>
 
 <br>
 
- **설명**  
- **설명**
+**Don’t Nudge Me**는  
+플레이어 간 밀치기(Nudge)를 중심으로 한  
+**실시간 멀티플레이 캐주얼 배틀 로얄 게임**입니다.
+
+플레이어 이동과 상호작용의 물리적 재미에 집중하여,  
+짧은 플레이 타임 안에서도 긴장감 있는 경쟁을 제공합니다.
 
 </div>
 
@@ -42,53 +47,156 @@
 
 ## 📋 목차
 
-- [게임 소개](#-게임-소개)
-- [주요 구현 시스템](#-주요-구현-시스템)
-  - [](#-)
 - [기술 스택](#tech-stack)
-- [설계 포인트](#design-point)
+- [게임 소개](#overview)
+- [시스템 아키텍처](#architecture)
+- [주요 구현 시스템](#systems)
+  - [플레이어 이동](#player-move)
+  - [대시](#dash)
+  - [넛지 시스템](#nudge)
+  - [슬라이딩](#sliding)
+  - [이모트](#emote)
+  - [커스터마이징](#customizing)
 - [개발자](#developer)
-  
+
 <br><br>
 
 ---
 
+<a id="tech-stack"></a>
+## 🧰 기술 스택
+
+- Engine: Unity 2022
+- Language: C#
+- Network: Photon PUN2
+- Tool: GitHub, Unity Editor
+
+<br><br>
+
+---
+## 🤲 시스템 아키텍처
+#### 📂 Source Entry
+- [`/Assets/_Proj/Scripts`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts)
+
+### 플레이어 아키텍처
+
+<br>
+<table>
+  <tr>
+    <td width="49%" align="center">
+      <a href=""><img alt="player sturcture" src="" width="100%" /></a>
+      <br/><br/><b>플레이어 구조</b>
+    </td>
+    <!-- 세로 구분선 -->
+    <td width="2%" align="center">
+      <div style="width:1px; height:100%; background-color:#cccccc;"></div>
+    </td>
+    <td width="49%" align="center">
+      <a href=""><img alt="player flow" src="" width="100%" /></a>
+      <br/><b>플레이어 흐름</b>
+    </td>
+  </tr>
+</table>
+<br>
+
+### 커스터마이징 구조
+<div align="center"><a href=""><img width="80%" alt="custom structure" src="" /></a></div>
+
+<br><br>
+
+---
+
+<a id="overview"></a>
 ## 🎯 게임 소개
 
-**3D 레이싱 게임**입니다.
-
-- 플랫폼: PC  
-- 개발 엔진: Unity 2022  
-- 개발 기간: 2025. ~ 2025.  
+- 장르: 실시간 멀티플레이 캐주얼 배틀 로얄
+- 플랫폼: PC
+- 개발 엔진: Unity 2022
+- 개발 기간: 2025.09.22 ~ 2025.10.13
 - 개발 인원: 팀 프로젝트 (5명)
 
-> 본 README에는 팀 프로젝트 중 제가 맡은 ****파트가 정리되어 있습니다.
+> 본 README는 팀 프로젝트 중  
+> **제가 담당한 플레이어 및 상호작용 시스템 중심으로 정리**되어 있습니다.
 
 <br><br>
 
 ---
 
+<a id="systems"></a>
 ## 💻 주요 구현 시스템
 
-<a id=""></a>
-### 🛰️ 제목
+<a id="player-move"></a>
+### 🕹️ 플레이어 이동
 
-#### [`.cs`](https://github.com/SchneeWalen48/MoonlitRush/blob/main/Assets/_Proj/Scripts/.cs)
-💡 **Summary**
+- [`PlayerController`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/PlayerController.cs)
 
-- **주요 기능**
-  - 기능
-
-- **주요 메서드**
-  - 메서드
+- Rigidbody 기반 이동 구조
+- Update / FixedUpdate 분리로 입력과 물리 처리 안정화
+- 카메라 기준 방향 이동으로 조작 일관성 확보
 
 <br>
 
 ---
 
-<a id="design-point"></a>
-## ⚙️ 설계 포인트
+<a id="dash"></a>
+### 🤜 대시
 
+- [`PlayerDash`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/PlayerDash.cs)
+
+- 연속 입력을 감지하여 짧은 시간 동안 순간 가속 이동
+
+<br>
+
+---
+
+<a id="nudge"></a>
+### 🤜 넛지 시스템
+
+- [`PlayerNudge`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/PlayerNudge.cs)
+
+- 근접 범위 내 플레이어 감지 후 물리적 힘 적용
+- Photon RPC 기반으로 넛지 이벤트 동기화
+- 입력 차단 시간 적용으로 연속 밀치기 방지
+
+<br>
+
+---
+
+<a id="sliding"></a>
+### 🛝 슬라이딩
+
+- [`PlayerSliding`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/PlayerSliding.cs)
+
+- 트리거 진입 시 슬라이딩 상태로 전환
+- PlayerController 이동/점프 제어를 차단하여 상태 충돌 방지
+- 레일 경로 기반 이동으로 연출 안정성 확보
+
+<br>
+
+---
+
+<a id="emote"></a>
+### 😀 이모트
+
+- [`PlayerQuickEmoji`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/PlayerQuickEmoji.cs)
+
+- 간단한 입력으로 감정을 표현하는 비언어적 커뮤니케이션
+- RPC 이벤트로 모든 클라이언트에 동일하게 표시
+- 표시 시간 제한을 두어 시각적 혼잡 방지
+
+<br>
+
+---
+
+<a id="customizing"></a>
+### 🎨 커스터마이징
+
+- [`CharacterCustom`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/CharacterCustom.cs)
+- [`CustomizeSelectPanel`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/CustomizeSelectPanel.cs)
+
+- 로비에서 캐릭터 외형을 설정하고 즉시 반영
+- 멀티플레이 환경에서 각 플레이어를 시각적으로 구분 가능
+- 외형 표현 중심의 보조 시스템으로 구현
 
 <br><br>
 
@@ -105,9 +213,5 @@
 <a href="https://github.com/SchneeWalen48">
   <img src="https://img.shields.io/badge/SchneeWalen48-blue?style=for-the-badge&logo=GitHub&logoColor=ffffff&label=GitHub&labelColor=Black"/>
 </a>
-
-<br><br>
-
-****
 
 </div>
