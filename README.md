@@ -3,7 +3,7 @@
 # 🎮 Don't Nudge Me
 ### 실시간 멀티플레이 캐주얼 배틀 로얄 게임
 
-<a href="">
+<a href="https://youtu.be/VlyXmGQhBaM">
   <img width="100" height="100" alt="Youtube_logo"
     src="https://github.com/user-attachments/assets/2aa6f449-7ffa-4dd2-9086-232f5499456f" />
 </a>
