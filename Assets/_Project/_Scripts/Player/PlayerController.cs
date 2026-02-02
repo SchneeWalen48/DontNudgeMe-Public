@@ -418,8 +418,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
         isNudged = true;
         if (anim != null)
             anim.SetBool("IsNudged", true);
-
-        //Vector3 nudgePos = transform.position + Vector3.up * (col.center.y + col.height / 2f + 0.1f);
+            
         Vector3 nudgePos = Vector3.up * (col.center.y + col.height / 2f + 0.01f);
 
         photonView.RPC(nameof(PlayParticleRPC), RpcTarget.All, PARTICLE_NUDGE, nudgePos, Quaternion.Euler(-90f, 0, 0));
