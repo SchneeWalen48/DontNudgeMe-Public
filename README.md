@@ -13,17 +13,17 @@
 <table>
   <tr>
     <td align="center" width="33%">
-      <img alt="movement" src="" />
+      <img alt="movement" src="https://github.com/user-attachments/assets/45fa8394-22ff-4e06-a278-b4ecfb62ddd4" />
       <br/>
       <b>플레이어 이동</b>
     </td>
     <td align="center" width="33%">
-      <img alt="nudge" src="" />
+      <img alt="nudge" src="https://github.com/user-attachments/assets/fc229762-c4d2-4935-8104-17ea70c8a1d3" />
       <br/>
       <b>넛지 상호작용</b>
     </td>
     <td align="center" width="33%">
-      <img alt="slide" src="" />
+      <img alt="slide" src="https://github.com/user-attachments/assets/a4332dfe-c27f-4f9b-8821-ac44ff96ca34" />
       <br/>
       <b>슬라이딩 기믹</b>
     </td>
@@ -84,7 +84,7 @@
 <table>
   <tr>
     <td width="49%" align="center">
-      <a href=""><img alt="player sturcture" src="" width="100%" /></a>
+      <a href="https://github.com/user-attachments/assets/2fee29d7-1662-4354-9de6-1cd6c396aa27"><img alt="player sturcture" src="https://github.com/user-attachments/assets/2fee29d7-1662-4354-9de6-1cd6c396aa27" width="100%" /></a>
       <br/><br/><b>플레이어 구조</b>
     </td>
     <!-- 세로 구분선 -->
@@ -92,7 +92,7 @@
       <div style="width:1px; height:100%; background-color:#cccccc;"></div>
     </td>
     <td width="49%" align="center">
-      <a href=""><img alt="player flow" src="" width="100%" /></a>
+      <a href="https://github.com/user-attachments/assets/26de30a1-2b09-41ce-a93a-2b90a5d81f28"><img alt="player flow" src="https://github.com/user-attachments/assets/26de30a1-2b09-41ce-a93a-2b90a5d81f28" width="100%" /></a>
       <br/><b>플레이어 흐름</b>
     </td>
   </tr>
@@ -100,7 +100,7 @@
 <br>
 
 ### 커스터마이징 구조
-<div align="center"><a href=""><img width="80%" alt="custom structure" src="" /></a></div>
+<div align="center"><a href="https://github.com/user-attachments/assets/16441b64-a675-4dd2-b15d-78269314b642"><img width="80%" alt="custom structure" src="https://github.com/user-attachments/assets/16441b64-a675-4dd2-b15d-78269314b642" /></a></div>
 
 <br><br>
 
