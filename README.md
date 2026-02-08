@@ -100,7 +100,7 @@
 <br>
 
 ### 커스터마이징 구조
-<div align="center"><a href="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075"><img width="80%" alt="custom structure" src="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075" /></a></div>
+<div align="center"><a href="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075"><img width="65%" alt="custom structure" src="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075" /></a></div>
 
 <br><br>
 
