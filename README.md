@@ -84,7 +84,7 @@
 <table>
   <tr>
     <td width="49%" align="center">
-      <a href="https://github.com/user-attachments/assets/2fee29d7-1662-4354-9de6-1cd6c396aa27"><img alt="player sturcture" src="https://github.com/user-attachments/assets/2fee29d7-1662-4354-9de6-1cd6c396aa27" width="100%" /></a>
+      <a href="https://github.com/user-attachments/assets/40cb94a5-1708-461f-a80d-50695395b18a"><img alt="player sturcture" src="https://github.com/user-attachments/assets/40cb94a5-1708-461f-a80d-50695395b18a" width="100%" /></a>
       <br/><br/><b>플레이어 구조</b>
     </td>
     <!-- 세로 구분선 -->
@@ -92,7 +92,7 @@
       <div style="width:1px; height:100%; background-color:#cccccc;"></div>
     </td>
     <td width="49%" align="center">
-      <a href="https://github.com/user-attachments/assets/26de30a1-2b09-41ce-a93a-2b90a5d81f28"><img alt="player flow" src="https://github.com/user-attachments/assets/26de30a1-2b09-41ce-a93a-2b90a5d81f28" width="100%" /></a>
+      <a href="https://github.com/user-attachments/assets/b760bf7b-96d1-438f-b89d-77a1b155c9fb"><img alt="player flow" src="https://github.com/user-attachments/assets/b760bf7b-96d1-438f-b89d-77a1b155c9fb" width="100%" /></a>
       <br/><b>플레이어 흐름</b>
     </td>
   </tr>
@@ -100,7 +100,7 @@
 <br>
 
 ### 커스터마이징 구조
-<div align="center"><a href="https://github.com/user-attachments/assets/16441b64-a675-4dd2-b15d-78269314b642"><img width="80%" alt="custom structure" src="https://github.com/user-attachments/assets/16441b64-a675-4dd2-b15d-78269314b642" /></a></div>
+<div align="center"><a href="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075"><img width="80%" alt="custom structure" src="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075" /></a></div>
 
 <br><br>
 
