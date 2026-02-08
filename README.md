@@ -144,6 +144,7 @@
 - [`PlayerDash`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/PlayerDash.cs)
 
 - 연속 입력을 감지하여 짧은 시간 동안 순간 가속 이동
+- 이동 스킬 특성상 트리거 이벤트 중심으로 처리하여 네트워크 부하 최소화
 
 <br>
 
@@ -156,6 +157,7 @@
 
 - 근접 범위 내 플레이어 감지 후 물리적 힘 적용
 - Photon RPC 기반으로 넛지 이벤트 동기화
+- 실제 힘 적용과 입력 차단은 피격 대상 Owner 클라이언트 기준으로 처리
 - 입력 차단 시간 적용으로 연속 밀치기 방지
 
 <br>
@@ -168,8 +170,8 @@
 - [`PlayerSliding`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/PlayerSliding.cs)
 
 - 트리거 진입 시 슬라이딩 상태로 전환
-- PlayerController 이동/점프 제어를 차단하여 상태 충돌 방지
-- 레일 경로 기반 이동으로 연출 안정성 확보
+- 슬라이딩 중 PlayerController 이동/점프 제어를 차단하여 상태 충돌 방지
+- 레일 경로(waypoint) 기반 이동 및 회전 보간으로 연출 안정성 확보
 
 <br>
 
@@ -194,9 +196,10 @@
 - [`CharacterCustom`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/CharacterCustom.cs)
 - [`CustomizeSelectPanel`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts/Player/CustomizeSelectPanel.cs)
 
-- 로비에서 캐릭터 외형을 설정하고 즉시 반영
-- 멀티플레이 환경에서 각 플레이어를 시각적으로 구분 가능
-- 외형 표현 중심의 보조 시스템으로 구현
+- 로비에서 캐릭터 외형을 설정하고 즉시 미리보기 적용
+- CustomizationData 기반으로 외형 데이터를 구조화하여 관리
+- 저장 시 Photon Custom Properties로 변환하여 멀티플레이 환경에 반영
+- 외형 표현 중심의 보조 시스템
 
 <br><br>
 
