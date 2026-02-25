@@ -51,6 +51,7 @@
 
 - [기술 스택](#tech-stack)
 - [게임 소개](#overview)
+- [설계 노트(Design Notes](#point)
 - [시스템 아키텍처](#architecture)
 - [주요 구현 시스템](#systems)
   - [플레이어 이동](#player-move)
@@ -76,6 +77,37 @@
 <br><br>
 
 ---
+
+
+<a id="overview"></a>
+## 🎯 게임 소개
+
+- 장르: 실시간 멀티플레이 캐주얼 배틀 로얄
+- 플랫폼: PC
+- 개발 엔진: Unity 2022
+- 개발 기간: 2025.09.22 ~ 2025.10.13
+- 개발 인원: 팀 프로젝트 (5명)
+
+> 본 README는 팀 프로젝트 중  
+> **제가 담당한 플레이어 및 상호작용 시스템 중심으로 정리**되어 있습니다.
+
+<br><br>
+
+---
+
+<a id="point"></a>
+## ⚙️ Design Notes
+
+> 본 프로젝트는 실시간 멀티플레이 환경에서 '각 클라이언트가 동일한 상태를 공유하도록 하는 것'을 원칙으로 구현되었습니다.<br>
+
+- **이벤트성 동작은 RPC, 지속 상태는 OnSerializeView로 역할 분리** 
+- **입력 처리와 실제 물리 반응을 Owner 기준으로 처리**  
+- **상태 충돌 방지를 위한 명확한 상태 전환 구조**  
+  
+<br><br>
+
+---
+
 ## 🤲 시스템 아키텍처
 #### 📂 Source Entry
 - [`/Assets/_Proj/Scripts`](https://github.com/SchneeWalen48/DontNudgeMe-Public/blob/main/Assets/_Project/_Scripts)
@@ -103,22 +135,6 @@
 
 ### 커스터마이징 구조
 <div align="center"><a href="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075"><img width="60%" alt="custom structure" src="https://github.com/user-attachments/assets/02547863-6c92-4ba5-8148-e9d235fed075" /></a></div>
-
-<br><br>
-
----
-
-<a id="overview"></a>
-## 🎯 게임 소개
-
-- 장르: 실시간 멀티플레이 캐주얼 배틀 로얄
-- 플랫폼: PC
-- 개발 엔진: Unity 2022
-- 개발 기간: 2025.09.22 ~ 2025.10.13
-- 개발 인원: 팀 프로젝트 (5명)
-
-> 본 README는 팀 프로젝트 중  
-> **제가 담당한 플레이어 및 상호작용 시스템 중심으로 정리**되어 있습니다.
 
 <br><br>
 
